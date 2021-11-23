@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@webmuds/development": "github:webmuds/development#0.1.1",
-    "release-it": "14.11.7"
+    "release-it": "14.11.8"
   },
   "babel": {
     "extends": "./node_modules/@webmuds/development/config/babel"
