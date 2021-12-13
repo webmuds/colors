@@ -28,10 +28,10 @@
     "@dimensionalpocket/release": "github:dimensionalpocket/release-js#0.2.2"
   },
   "babel": {
-    "extends": "./node_modules/@webmuds/development/config/babel"
+    "extends": "./node_modules/@dimensionalpocket/development/babel"
   },
   "eslintConfig": {
-    "extends": "./node_modules/@webmuds/development/config/eslint"
+    "extends": "./node_modules/@dimensionalpocket/development/eslint"
   },
   "mocha": {
     "recursive": true,
