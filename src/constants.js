@@ -18,4 +18,4 @@ export const HTML_REPLACEMENT_TEMPLATE = '<span class="wm$2">$3</span>'
 /**
   * The main Regular Expression for performing replacements.
   */
-export const COLOR_RX = new RegExp('({((?:' + COLORS + '))}((?:(?!{(' + COLORS + '|\/)}).)*)({\/})*)', 'gims')
+export const COLOR_RX = new RegExp('({((?:' + COLORS + '))}((?:(?!{(' + COLORS + '|/)}).)*)({/})*)', 'gims')
