@@ -27,8 +27,8 @@ describe('#html', function () {
   })
 
   it('replaces colors in multi-line string', function () {
-    const result = html('It is {lime}green\n on a new line \r another \r\n last one.{/}')
-    expect(result).to.equal('It is <span class="wmlime">green\n on a new line \r another \r\n last one.</span>')
+    const result = html('It is {lime}green\n on a new line{/} \r another \r\n last one.')
+    expect(result).to.equal('It is <span class="wmlime">green\n on a new line</span> \r another \r\n last one.')
   })
 
   it('defaults to escaping HTML code before parsing color tags', function () {
