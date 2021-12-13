@@ -21,6 +21,16 @@ describe('#html', function () {
     expect(result).to.equal('It is <span class="wmlime">green</span>')
   })
 
+  it('auto-closes open tags at end of multi-line string', function () {
+    const result = html('It is {lime}green\n on a new line \r another \r\n last one.')
+    expect(result).to.equal('It is <span class="wmlime">green\n on a new line \r another \r\n last one.</span>')
+  })
+
+  it('replaces colors in multi-line string', function () {
+    const result = html('It is {lime}green\n on a new line \r another \r\n last one.{/}')
+    expect(result).to.equal('It is <span class="wmlime">green\n on a new line \r another \r\n last one.</span>')
+  })
+
   it('defaults to escaping HTML code before parsing color tags', function () {
     const result = html("> {red}\"Red\" Text & {yellow}> 'Yellow' <")
     expect(result).to.equal('&gt; <span class="wmred">&quot;Red&quot; Text &amp; </span><span class="wmyellow">&gt; &#39;Yellow&#39; &lt;</span>')
