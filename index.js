@@ -1,3 +1,6 @@
-import { html } from './src/html.js'
+// ts-check
 
-export { html }
+import { html } from './src/html.js'
+import { strip } from './src/strip.js'
+
+export { html, strip }
