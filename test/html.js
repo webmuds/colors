@@ -2,7 +2,7 @@
 
 'use strict'
 
-import { expect } from 'chai'
+import { expect } from '@dimensionalpocket/development'
 import { html } from '../src/html.js'
 
 describe('#html', function () {

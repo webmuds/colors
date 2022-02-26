@@ -76,6 +76,17 @@ html("{red}\"<b>Bold Red</b>\"{/} &amp; '<i>{yellow}Italic Yellow{/}</i>'", fals
 // => <span class="wmred">"<b>Bold Red</b>"</span> &amp; '<i><span class="wmyellow">Italic Yellow</span></i>'
 ```
 
+## Removing Color Tags
+
+This library offers a `strip` method to remove color tags from a string:
+
+```js
+import { strip } from '@webmuds/colors'
+
+strip("{yellow}Yellow{/} Text")
+// => "Yellow Text"
+```
+
 ## CSS File
 
 This library provides the above CSS classes in `css/colors.css` so that you can import it in other projects. Classes are prefixed with `wm` to avoid collision.
