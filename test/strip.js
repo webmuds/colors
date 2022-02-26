@@ -23,4 +23,8 @@ describe('#strip', function () {
   it('removes tags from multiline strings', function () {
     expect(strip('{red}line1\nline2\n{green}line3{/}')).to.eq('line1\nline2\nline3')
   })
+
+  it('leaves non-color tags untouched', function () {
+    expect(strip('{red}{foo}bar')).to.eq('{foo}bar')
+  })
 })
