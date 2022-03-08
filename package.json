@@ -6,7 +6,6 @@
   "type": "module",
   "scripts": {
     "test": "npm run lint && NODE_ENV=test c8 mocha",
-    "test:ci": "mocha",
     "lint": "standardx --fix",
     "release": "release-it --config ./node_modules/@dimensionalpocket/release/config/default.js"
   },
@@ -24,8 +23,8 @@
     "escape-html": "1.0.3"
   },
   "devDependencies": {
-    "@dimensionalpocket/development": "github:dimensionalpocket/development-js#0.4.2",
-    "@dimensionalpocket/release": "github:dimensionalpocket/release-js#0.2.3"
+    "@dimensionalpocket/development": "github:dimensionalpocket/development-js#0.5.2",
+    "@dimensionalpocket/release": "github:dimensionalpocket/release-js#0.2.4"
   },
   "babel": {
     "extends": "./node_modules/@dimensionalpocket/development/babel"
@@ -39,7 +38,7 @@
     "colors": true
   },
   "c8": {
-    "all": true,
+    "extends": "./node_modules/@dimensionalpocket/development/c8/default.json",
     "include": [
       "index.js",
       "src"
