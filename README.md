@@ -87,6 +87,21 @@ strip("{yellow}Yellow{/} Text")
 // => "Yellow Text"
 ```
 
+## Emoji
+
+This library provides an additional `wrapEmoji()` method that wraps all emoji in `<span class="wmE">` tags.
+
+```js
+import { wrapEmoji } from '@webmuds/colors'
+
+wrapEmoji("looking good 👍")
+// => 'looking good <span class="wmE">👍</span>'
+```
+
+You can then use CSS to change the `wmE` class to use a different font (for instance, a [monochrome emoji font](https://fonts.google.com/noto/specimen/Noto+Emoji?noto.query=emoji)).
+
+_(wmE = webmuds emoji)_
+
 ## CSS File
 
 This library provides the above CSS classes in `css/colors.css` so that you can import it in other projects. Classes are prefixed with `wm` to avoid collision.
