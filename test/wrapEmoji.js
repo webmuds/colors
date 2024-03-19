@@ -19,7 +19,7 @@ describe('#wrapEmoji', function () {
   })
 
   it('tags all emojis in multiline text', function () {
-    expect(wrapEmoji("💯 ab\nc😅def\n😂")).to.eq("<span class=\"wmE\">💯</span> ab\nc<span class=\"wmE\">😅</span>def\n <span class=\"wmE\">😂</span>")
+    expect(wrapEmoji('💯 ab\nc😅def\n😂')).to.eq('<span class="wmE">💯</span> ab\nc<span class="wmE">😅</span>def\n <span class="wmE">😂</span>')
   })
 
   it('tags sequential emojis in a single tag', function () {
