@@ -24,6 +24,9 @@ export function html (text, escape = true) {
 
 /**
  * Wraps all emoji in a custom <span> tag.
+ *
+ * @param {string} text
+ * @return {string}
  */
 export function wrapEmoji (text) {
   return text.replace(EMOJI_RX, EMOJI_REPLACEMENT_TEMPLATE)
