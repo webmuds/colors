@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/webmuds/colors/compare/0.3.1...0.3.2) (2024-05-03)
+
+
+### Bug Fixes
+
+* `wrapEmoji` fixes and improvements ([#43](https://github.com/webmuds/colors/issues/43)) ([aca1750](https://github.com/webmuds/colors/commit/aca1750e010b9c1c2305e293dfc1a57d3d16b8f1))
+
 ## [0.3.1](https://github.com/webmuds/colors/compare/0.3.0...0.3.1) (2024-05-03)
 
 
