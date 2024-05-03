@@ -24,14 +24,3 @@ export const COLOR_RX = new RegExp('({((?:' + COLORS + '))}((?:(?!{(' + COLORS +
  * RegExp to strip all color tags.
  */
 export const STRIP_RX = new RegExp('{(?:' + COLORS + '|/)}', 'gim')
-
-/**
- * RegExp to wrap all emoji in <span> tags.
- */
-export const EMOJI_RX = /([\p{Emoji_Presentation}]+)/gu
-
-/**
- * Template to use when replacing emoji.
- * (wmE = WebMUDs Emoji)
- */
-export const EMOJI_REPLACEMENT_TEMPLATE = '<span class="wmE">$1</span>'

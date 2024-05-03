@@ -2,7 +2,7 @@
 
 'use strict'
 
-import { COLOR_RX, HTML_REPLACEMENT_TEMPLATE, EMOJI_RX, EMOJI_REPLACEMENT_TEMPLATE } from './constants.js'
+import { COLOR_RX, HTML_REPLACEMENT_TEMPLATE } from './constants.js'
 import escapeHtml from 'escape-html'
 
 /**
@@ -20,14 +20,4 @@ export function html (text, escape = true) {
     escapedText = text
   }
   return escapedText.replace(COLOR_RX, HTML_REPLACEMENT_TEMPLATE)
-}
-
-/**
- * Wraps all emoji in a custom <span> tag.
- *
- * @param {string} text
- * @return {string}
- */
-export function wrapEmoji (text) {
-  return text.replace(EMOJI_RX, EMOJI_REPLACEMENT_TEMPLATE)
 }
