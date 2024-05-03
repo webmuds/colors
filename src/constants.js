@@ -28,7 +28,7 @@ export const STRIP_RX = new RegExp('{(?:' + COLORS + '|/)}', 'gim')
 /**
  * RegExp to wrap all emoji in <span> tags.
  */
-export const EMOJI_RX = /([\p{Emoji}\p{Emoji_Presentation}]+)/gimsu
+export const EMOJI_RX = /([\p{Emoji_Presentation}]+)/gu
 
 /**
  * Template to use when replacing emoji.
