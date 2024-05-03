@@ -1,6 +1,7 @@
 // ts-check
 
-import { html, wrapEmoji } from './src/html.js'
+import { html } from './src/html.js'
 import { strip } from './src/strip.js'
+import { wrapEmoji } from './src/wrapEmoji.js'
 
 export { html, strip, wrapEmoji }
