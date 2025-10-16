@@ -1,6 +1,6 @@
 {
   "name": "@webmuds/colors",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "MUD color tags string parser for WebMUDs",
   "main": "index.js",
   "type": "module",

@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.3](https://github.com/webmuds/colors/compare/0.3.2...0.3.3) (2025-10-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency emoji-regex to v10.4.0 ([#45](https://github.com/webmuds/colors/issues/45)) ([e0545dd](https://github.com/webmuds/colors/commit/e0545ddcb2f105f5cff6f58db91d25de3d053bd7))
+* **deps:** update dependency emoji-regex to v10.5.0 ([#47](https://github.com/webmuds/colors/issues/47)) ([66a32d6](https://github.com/webmuds/colors/commit/66a32d6e4d6a3c8d1077c7c6b3cace923016ab64))
+* **deps:** update dependency emoji-regex to v10.6.0 ([#48](https://github.com/webmuds/colors/issues/48)) ([8dcbf1c](https://github.com/webmuds/colors/commit/8dcbf1c21146f93e88a9bedfe31cb698ff4e97a0))
+
 ## [0.3.2](https://github.com/webmuds/colors/compare/0.3.1...0.3.2) (2024-05-03)
 
 
